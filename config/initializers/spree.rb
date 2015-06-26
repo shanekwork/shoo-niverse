@@ -15,8 +15,9 @@ Spree.config do |config|
   # config.track_inventory_levels = false
 country = Spree::Country.find_by_name('Ireland')
 config.default_country_id = country.id if country.present?
-config.logo = "#"
+config.logo = "shoo-logo.jpg"
 config.admin_interface_logo = "store/logo.png"
 end
 
 Spree.user_class = "Spree::User"
+
